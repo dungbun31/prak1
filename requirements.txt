@@ -1,0 +1,15 @@
+transformers>=4.0.0
+torch
+pandas
+numpy
+scikit-learn
+PyPDF2
+python-docx
+pytesseract
+Pillow
+rarfile
+py7zr
+pdf2image
+tqdm
+tiktoken
+protobuf

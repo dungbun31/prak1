@@ -1,0 +1,4 @@
+Báo cáo chiến lược: Báo cáo nội bộ về chiến lược kinh doanh, phát triển sản phẩm
+Tài liệu dự án nghiên cứu: Tài liệu nghiên cứu và phát triển sản phẩm mới chứa thông tin nhạy cảm
+Hợp đồng bí mật: Hợp đồng giữa các bên có điều khoản bảo mật thông tin
+Tài liệu nội bộ: Email, biên bản họp hoặc tài liệu nêu rõ thông tin nội bộ của công ty không nên công khai

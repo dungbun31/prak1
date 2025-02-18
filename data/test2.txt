@@ -1,0 +1,4 @@
+Username: user123
+Password: P@ssw0rd!
+API Key: 9876543210abcdef
+Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...

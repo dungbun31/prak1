@@ -1,0 +1,4 @@
+Hợp đồng lao động: Hợp đồng ký kết giữa công ty và nhân viên
+Bảng lương: Bảng tính lương tháng 3/2025 với các khoản phụ cấp, bảo hiểm và thuế
+Phiếu chấm công: Bản ghi nhận số giờ làm việc của nhân viên
+Báo cáo thuế: Báo cáo thuế TNDN hoặc thuế GTGT của công ty
