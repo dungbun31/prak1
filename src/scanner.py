@@ -12,7 +12,6 @@ def scan_directory(directory, classifier, ocr_enabled=True):
     for root, dirs, files in os.walk(directory):
         for file in files:
             file_path = os.path.join(root, file)
-            # Nếu file là archive, giải nén và xử lý nội dung bên trong
             if is_archive(file_path):
                 extracted_path = extract_archive(file_path)
                 if extracted_path:
@@ -48,7 +47,6 @@ def main():
     parser = argparse.ArgumentParser(
         description="Scan Doc Dung LLM - Document Scanner and Classifier"
     )
-    # Nếu không cung cấp đối số, mặc định quét thư mục "data"
     parser.add_argument(
         "path",
         type=str,
@@ -56,7 +54,6 @@ def main():
         default="data",
         help="Đường dẫn tới thư mục hoặc file cần quét (mặc định: data)",
     )
-    # Nếu không chỉ định model qua đối số, đọc từ config.json
     parser.add_argument(
         "--model",
         type=str,
@@ -74,7 +71,6 @@ def main():
     )
     args = parser.parse_args()
 
-    # Nếu không truyền model qua đối số, đọc model_path từ config.json
     model_path = args.model
     if not model_path:
         try:
@@ -87,10 +83,8 @@ def main():
             print(f"Error reading config: {e}")
             model_path = "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli"
 
-    # Khởi tạo classifier
     classifier = DocumentClassifier(model_path=model_path, config_path=args.config)
 
-    # Xử lý nếu đường dẫn là thư mục hay file
     if os.path.isdir(args.path):
         results = scan_directory(args.path, classifier, ocr_enabled=args.ocr)
     else:

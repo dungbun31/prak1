@@ -31,7 +31,6 @@ def extract_text_from_pdf(file_path, ocr_enabled=True):
                     text += page_text
     except Exception as e:
         print(f"Error reading PDF {file_path}: {e}")
-    # Nếu nội dung trích xuất quá ngắn, thử OCR (chuyển PDF thành ảnh)
     if ocr_enabled and len(text.strip()) < 10:
         try:
             from pdf2image import convert_from_path
